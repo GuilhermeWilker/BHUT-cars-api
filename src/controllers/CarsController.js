@@ -15,4 +15,12 @@ const index = async (req, res) => {
   }
 };
 
-module.exports = { index };
+const store = async (req, res) => {
+  try {
+    res.json("store");
+  } catch (err) {
+    console.error("Erro ao cadastrar novo carro: ", err);
+  }
+};
+
+module.exports = { index, store };
