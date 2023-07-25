@@ -2,6 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
+// Conexão com Banco de dados
+const connectDB = require("./database/db");
+connectDB();
+
 // Uso de rotas
 app.use("/api", require("./routes/api_cars"));
 
