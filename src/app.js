@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-// Conexão com Banco de dados
+// Conexão com Banco de dados (MongoDB)
 const connectDB = require("./database/db");
 connectDB();
 

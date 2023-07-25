@@ -2,6 +2,7 @@ const CarsController = require("../controllers/CarsController");
 const express = require("express");
 const router = express.Router();
 
-router.get("/", CarsController.index);
+router.get("/cars", CarsController.index);
+// router.post("/cars", CarsController.store);
 
 module.exports = router;
